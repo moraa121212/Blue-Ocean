@@ -23,7 +23,11 @@ pipeline {
 
       }
     }
-
+    stage('mangaaaaaa'){
+          steps {
+            echo 'running Test2'
+          }
+        }
     stage('Deploy') {
       steps {
         input(message: 'Are you sure to deploy', ok: 'yes iam sure', cancel: 'no i am not ')
