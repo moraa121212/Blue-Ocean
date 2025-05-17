@@ -18,6 +18,9 @@ pipeline {
         stage('Test1') {
           steps {
             echo 'reunning Test1'
+            timeout(time: 5, unit: 'SECONDS') {
+            sh 'sleep 10'
+           }
           }
         }
 
